@@ -59,20 +59,6 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-
-                {/* Services */}
-                <div>
-                    <h3 className="font-semibold mb-4">
-                        {t("footer.servicesTitle")}
-                    </h3>
-                    <ul className="flex flex-col space-y-2">
-                        <li>{t("footer.services.s1")}</li>
-                        <li>{t("footer.services.s2")}</li>
-                        <li>{t("footer.services.s3")}</li>
-                        <li>{t("footer.services.s4")}</li>
-                    </ul>
-                </div>
-
                 {/* Plans */}
                 <div>
                     <h3 className="font-semibold mb-4">
@@ -105,6 +91,19 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
+
+                {/* Services */}
+                <div>
+                    <h3 className="font-semibold mb-4">
+                        {t("footer.servicesTitle")}
+                    </h3>
+                    <ul className="flex flex-col space-y-2">
+                        <li>{t("footer.services.s1")}</li>
+                        <li>{t("footer.services.s2")}</li>
+                        <li>{t("footer.services.s3")}</li>
+                        <li>{t("footer.services.s4")}</li>
+                    </ul>
+                </div>
             </div>
 
             {/* Copyright */}
@@ -112,9 +111,7 @@ const Footer = () => {
                 <p className="text-sm">
                     &copy; {new Date().getFullYear()} {t("footer.copyright")}
                 </p>
-                <p className="text-xs mt-2">
-                    {t("footer.credit")}
-                </p>
+                <p className="text-xs mt-2">{t("footer.credit")}</p>
             </div>
         </footer>
     );
