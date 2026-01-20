@@ -2,10 +2,12 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "../assets/my-logo.png/";
+import { useLanguage } from "../i18n/LanguageContext";
+import logo from "../assets/vetrinova_typologo.png";
 
 const Header = ({ isDarkMode, setIsDarkMode }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { language, changeLanguage, t } = useLanguage();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -25,7 +27,11 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         >
             {/* Logo */}
             <Link to="/">
-                <img className="w-40 max-md:w-28" src={logo} alt="logo" />
+                <img
+                    className="w-40 max-md:w-28"
+                    src={logo}
+                    alt="Vetrinova logo"
+                />
             </Link>
 
             {/* Mobile Menu */}
@@ -36,6 +42,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
                 >
                     <span>&#9776;</span>
                 </button>
+
                 <div
                     className={`fixed top-0 right-0 w-64 h-full pt-8 ${
                         isDarkMode
@@ -45,11 +52,11 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
                         isMenuOpen ? "translate-x-0" : "translate-x-full"
                     } transition-transform duration-300 ease-in-out`}
                 >
-                    <div className="flex items-center justify-between space-x-4">
-                        {/* Dark Mode Toggle for Mobile */}
+                    <div className="flex items-center space-x-4">
+                        {/* Dark Mode */}
                         <button
                             onClick={toggleDarkMode}
-                            className="flex p-2 rounded-full bg-gray-200 hover:bg-lightGreen transition duration-200"
+                            className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-lightGreen transition duration-200"
                         >
                             {!isDarkMode ? (
                                 <FaMoon className="text-gray-800 text-xl" />
@@ -58,47 +65,54 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
                             )}
                         </button>
 
+                        {/* Language */}
                         <button
-                            onClick={toggleMenu}
-                            className="text-3xl focus:outline-none"
+                            onClick={() =>
+                                changeLanguage(language === "en" ? "it" : "en")
+                            }
+                            className={`w-10 h-10 flex items-center justify-center rounded-full transition duration-200 font-semibold text-sm ${
+                                isDarkMode
+                                    ? "bg-gray-200 text-gray-800 hover:bg-lightGreen"
+                                    : "bg-gray-200 text-gray-800 hover:bg-lightGreen"
+                            }`}
                         >
-                            <span>&#10005;</span>
+                            {language === "en" ? "IT" : "EN"}
                         </button>
                     </div>
 
                     {/* Navigation Links */}
                     <div className="flex flex-col justify-center items-center space-y-6 py-10">
                         <Link
+                            to="/about"
+                            className="hover:text-lightGreen transition duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            {t("nav.about")}
+                        </Link>
+                        <Link
                             to="/projects"
                             className="hover:text-lightGreen transition duration-200"
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            Projects
+                            {t("nav.projects")}
                         </Link>
                         <Link
                             to="/contact"
                             className="hover:text-lightGreen transition duration-200"
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            Contact Me
-                        </Link>
-                        <Link
-                            to="/about"
-                            className="hover:text-lightGreen transition duration-200"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            About Me
+                            {t("nav.contact")}
                         </Link>
                     </div>
 
-                    {/* Shopify Page Button in Mobile */}
+                    {/* CTA Mobile */}
                     <Link
-                        onClick={() => setIsMenuOpen(false)}
                         to="/order"
+                        onClick={() => setIsMenuOpen(false)}
                         className="flex mx-auto items-center space-x-2 px-10 pb-2 pt-1 bg-darkGreen hover:bg-lightGreen text-white rounded-full justify-center transition duration-200"
                     >
                         <span className="whitespace-nowrap">
-                            Free Consultation
+                            {t("nav.order")}
                         </span>
                         <HiArrowNarrowRight />
                     </Link>
@@ -107,33 +121,34 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8 w-full justify-between">
-                {/* Navigation Links for Desktop */}
+                {/* Navigation */}
                 <div className="flex gap-8">
                     <Link
                         to="/about"
                         className="hover:text-lightGreen transition duration-200"
                     >
-                        About me
+                        {t("nav.about")}
                     </Link>
                     <Link
                         to="/projects"
                         className="hover:text-lightGreen transition duration-200"
                     >
-                        Projects
+                        {t("nav.projects")}
                     </Link>
                     <Link
                         to="/contact"
                         className="hover:text-lightGreen transition duration-200"
                     >
-                        Contact me
+                        {t("nav.contact")}
                     </Link>
                 </div>
 
-                {/* Dark Mode Toggle and Order Button */}
+                {/* Actions */}
                 <div className="flex gap-5 items-center">
+                    {/* Dark Mode */}
                     <button
                         onClick={toggleDarkMode}
-                        className="p-3 rounded-full bg-gray-200 hover:bg-lightGreen transition duration-200"
+                        className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-lightGreen transition duration-200"
                     >
                         {!isDarkMode ? (
                             <FaMoon className="text-gray-800" />
@@ -142,18 +157,32 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
                         )}
                     </button>
 
-                    {/* Shopify Page Button for Desktop */}
+                    {/* Language */}
+                    <button
+                        onClick={() =>
+                            changeLanguage(language === "en" ? "it" : "en")
+                        }
+                        className={`w-10 h-10 flex items-center justify-center rounded-full transition duration-200 font-semibold text-sm ${
+                            isDarkMode
+                                ? "bg-gray-200 text-gray-800 hover:bg-lightGreen"
+                                : "bg-gray-200 text-gray-800 hover:bg-lightGreen"
+                        }`}
+                    >
+                        {language === "en" ? "IT" : "EN"}
+                    </button>
+
+                    {/* CTA */}
                     <Link
                         to="/order"
                         className="flex items-center space-x-2 px-8 py-2 bg-darkGreen hover:bg-lightGreen text-white rounded-full justify-center transition duration-200"
                     >
-                        <span>Free Consultation</span>
+                        <span>{t("nav.order")}</span>
                         <HiArrowNarrowRight />
                     </Link>
                 </div>
             </div>
 
-            {/* Dark Overlay behind the menu for Mobile */}
+            {/* Overlay */}
             {isMenuOpen && (
                 <div
                     className="fixed inset-0 bg-black opacity-50 md:hidden z-10"

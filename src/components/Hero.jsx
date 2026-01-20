@@ -1,7 +1,11 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { useLanguage } from "../i18n/LanguageContext";
+
 import hero from "../assets/webdeveloper-hero.png";
 
 export default function HeroSection({ isDarkMode }) {
+    const { t } = useLanguage();
+
     console.log(isDarkMode);
     return (
         <section
@@ -12,9 +16,9 @@ export default function HeroSection({ isDarkMode }) {
             }`}
         >
             <div className="w-1/2 max-lg:w-full max-lg:text-center lg:my-20">
-                <h2 className="text-3xl mb-4">Shopify Developer</h2>
-                <h1 className="text-2xl lg:text-5xl font-bold mb-10">
-                    Mahdi Karimian
+                <h2 className="text-2xl mb-4">{t("hero.subtitle")}</h2>
+                <h1 className="text-2xl lg:text-4xl font-bold mb-10">
+                    {t("hero.title")}
                 </h1>
                 <div
                     className={`text-lg max-lg:text-md lg:max-w-[700px] space-y-2 ${
@@ -22,19 +26,13 @@ export default function HeroSection({ isDarkMode }) {
                     }`}
                 >
                     <p>
-                        Need someone to set up your Shopify store quickly,
-                        smoothly, and professionally?
+                        {t("hero.p1")}
                     </p>
                     <p>
-                        I design custom themes that look great, run smoothly,
-                        and help you sell more. Whether you’re starting fresh or
-                        upgrading your store, I’ll make sure it’s easy to use
-                        and totally on-brand. Let’s build something awesome
-                        together.
+                       {t("hero.p2")}
                     </p>
                     <p>
-                        Check out my projects, and if you have any questions,
-                        just ask. I’m happy to help!
+                        {t("hero.p3")}
                     </p>
                 </div>
             </div>
