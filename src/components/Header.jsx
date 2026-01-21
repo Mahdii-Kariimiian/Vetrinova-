@@ -97,6 +97,13 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
                             {t("nav.projects")}
                         </Link>
                         <Link
+                            to="/order"
+                            className="hover:text-lightGreen transition duration-200"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            {t("nav.plans")}
+                        </Link>
+                        <Link
                             to="/contact"
                             className="hover:text-lightGreen transition duration-200"
                             onClick={() => setIsMenuOpen(false)}
@@ -134,6 +141,12 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
                         className="hover:text-lightGreen transition duration-200"
                     >
                         {t("nav.projects")}
+                    </Link>
+                    <Link
+                        to="/order"
+                        className="hover:text-lightGreen transition duration-200"
+                    >
+                        {t("nav.plans")}
                     </Link>
                     <Link
                         to="/contact"

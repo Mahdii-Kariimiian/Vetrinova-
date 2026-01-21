@@ -4,6 +4,7 @@ const it = {
         about: "Chi siamo",
         projects: "Progetti",
         contact: "Contatti",
+        plans: "piani" ,
         order: "Richiedi un preventivo",
     },
     projectsPage: {
@@ -128,135 +129,141 @@ const it = {
             b5: "Navigazione prodotti ottimizzata",
         },
     },
-    basicPlan: {
-        title: "Piano Base per lo Sviluppo di Store Shopify",
-        subtitle:
-            "Questo piano è pensato per aziende, piccoli business e nuovi brand che desiderano avviare uno store Shopify in modo rapido ed economico.",
-        price: "a partire da €499",
+   basicPlan: {
+    title: "Piano Base per lo Sviluppo di Store Shopify",
+    subtitle:
+        "Questo piano è pensato per aziende, piccoli business e nuovi brand che desiderano avviare uno store Shopify in modo rapido ed economico.",
 
-        servicesTitle: "Servizi inclusi:",
-        services: {
-            s1: "Tema Shopify predefinito (gratuito o già acquistato dal cliente), personalizzato nei colori, font e contenuti del brand",
-            s2: "Configurazione completa dello store Shopify",
-            s3: "Collegamento del dominio (dominio fornito dal cliente)",
-            s4: "Inserimento fino a 15 prodotti con testi e immagini forniti dal cliente",
-            s5: "Configurazione dei metodi di pagamento e spedizione",
-            s6: "Formazione base sull’utilizzo del pannello di amministrazione Shopify",
-            s7: "Fino a 2 revisioni incluse",
-        },
+    price: "Prezzo:",
+    priceValue: "A partire da €499",
 
-        excludedCostsTitle: "Costi non inclusi:",
-        excludedCosts: {
-            e1: "Canone mensile Shopify",
-            e2: "Registrazione e rinnovo del dominio",
-            e3: "Acquisto di temi premium Shopify (se utilizzati)",
-            e4: "App a pagamento di terze parti",
-        },
-
-        whyTitle: "Perché scegliere questo piano?",
-        why: {
-            w1: "Soluzione ideale per iniziare a vendere online con Shopify",
-            w2: "Avvio rapido dello store con tutte le funzionalità essenziali",
-            w3: "Struttura chiara e scalabile per una crescita futura",
-        },
-
-        notesTitle: "Note importanti:",
-        notes: {
-            n1: "Il piano è indicato per store con un massimo di 15 prodotti",
-            n2: "Funzionalità avanzate Shopify e personalizzazioni custom non sono incluse",
-            n3: "Il supporto post-lancio, la manutenzione del sito e i servizi SEO non sono inclusi e prevedono costi aggiuntivi",
-            n4: "Eventuali richieste fuori dal perimetro del piano verranno valutate e preventivate separatamente",
-        },
+    servicesTitle: "Servizi inclusi:",
+    services: {
+        s1: "Tema Shopify predefinito (gratuito o già acquistato dal cliente), personalizzato nei colori, font e contenuti del brand",
+        s2: "Configurazione completa dello store Shopify",
+        s3: "Collegamento del dominio (dominio fornito dal cliente)",
+        s4: "Inserimento fino a 15 prodotti con testi e immagini forniti dal cliente",
+        s5: "Configurazione dei metodi di pagamento e spedizione",
+        s6: "Formazione base sull’utilizzo del pannello di amministrazione Shopify",
+        s7: "Fino a 2 revisioni incluse",
     },
 
-    common: {
-        back: "Indietro",
-    },
-    advancedPlan: {
-        title: "Piano Advanced per lo Sviluppo di Store Shopify",
-        subtitle:
-            "Soluzione completamente personalizzata e scalabile, pensata per brand strutturati che richiedono funzionalità avanzate, alte prestazioni e crescita a lungo termine.",
-        price: "Prezzo:",
-        priceValue: "Su accordo",
-
-        servicesTitle: "Servizi inclusi:",
-        services: {
-            s1: "Design Shopify completamente custom da zero, basato su un concept e un’identità di brand approvati",
-            s2: "Inserimento e configurazione prodotti fino a 200 articoli (inserimento manuale o import – contenuti forniti dal cliente)",
-            s3: "Personalizzazione completa delle pagine dello store e delle pagine prodotto secondo la struttura approvata",
-            s4: "Integrazione e configurazione di app e funzionalità Shopify avanzate, selezionate in base alle esigenze del business",
-            s5: "Ottimizzazione SEO avanzata focalizzata su setup tecnico e struttura on-page",
-            s6: "Supporto post-lancio esteso incluso (modalità e durata definite in fase di accordo)",
-            s7: "Revisioni illimitate limitate al perimetro e al concept approvato del progetto",
-        },
-
-        excludedCostsTitle: "Costi non inclusi:",
-        excludedCosts: {
-            e1: "Canone mensile Shopify",
-            e2: "Registrazione e rinnovo del dominio",
-            e3: "App Shopify a pagamento o soluzioni premium di terze parti",
-            e4: "Attività SEO continuative come creazione contenuti, link building o strategie off-site",
-            e5: "Sviluppo di app custom o integrazioni complesse non concordate inizialmente",
-        },
-
-
-        whyTitle: "Perché scegliere questo piano?",
-        why: {
-            w1: "Design completamente su misura e allineato all’identità del brand",
-            w2: "Funzionalità avanzate con standard elevati di performance",
-            w3: "Soluzione scalabile e flessibile per la crescita del business nel tempo",
-        },
-
-        notesTitle: "Note importanti:",
-        notes: {
-            n1: "Adatto a store con cataloghi di grandi dimensioni o logiche di vendita complesse",
-            n2: "Il design custom non include riprogettazioni complete una volta approvato il concept",
-            n3: "Le revisioni illimitate non includono modifiche fuori dallo scope concordato",
-            n4: "Il prezzo finale viene definito in base alla complessità del progetto e alle funzionalità richieste",
-        },
+    excludedCostsTitle: "Costi non inclusi:",
+    excludedCosts: {
+        e1: "Canone mensile Shopify",
+        e2: "Registrazione e rinnovo del dominio",
+        e3: "Acquisto di temi premium Shopify (se utilizzati)",
+        e4: "App a pagamento di terze parti",
     },
 
-    intermediatePlan: {
-        title: "Piano Intermediate per lo Sviluppo di Store Shopify",
-        subtitle:
-            "Pensato per business in crescita che necessitano di maggiore flessibilità, funzionalità avanzate e una presenza online più strutturata.",
-        price: "Prezzo: a partire da €899",
-
-        servicesTitle: "Servizi inclusi:",
-        services: {
-            s1: "Personalizzazione avanzata del tema Shopify oppure design semplice custom basato su struttura e componenti esistenti",
-            s2: "Inserimento prodotti iniziali per l’avvio dello store (fino a 50 prodotti – testi e immagini forniti dal cliente)",
-            s3: "Supporto multi-valuta in base al piano Shopify o alle app utilizzate",
-            s4: "Creazione di pagine personalizzate (About, Contact, Blog)",
-            s5: "Integrazione e configurazione di app essenziali Shopify (SEO base, email, recensioni)",
-            s6: "Fino a 5 revisioni incluse",
-        },
-
-        excludedCostsTitle: "Costi non inclusi:",
-        excludedCosts: {
-            e1: "Canone mensile Shopify",
-            e2: "Registrazione e rinnovo del dominio",
-            e3: "Acquisto di temi premium Shopify (se utilizzati)",
-            e4: "App a pagamento di terze parti",
-            e5: "Costi legati a funzionalità avanzate o app premium",
-        },
-
-        whyTitle: "Perché scegliere questo piano?",
-        why: {
-            w1: "Maggiore personalizzazione rispetto al Piano Base",
-            w2: "Supporto multi-valuta per raggiungere clienti internazionali",
-            w3: "Integrazione di strumenti essenziali per migliorare gestione e conversioni",
-        },
-
-        notesTitle: "Note importanti:",
-        notes: {
-            n1: "Il piano è indicato per store con un massimo di 50 prodotti iniziali",
-            n2: "Il design custom è limitato e non include sviluppo UI/UX completamente su misura",
-            n3: "I servizi SEO inclusi sono limitati all’installazione e configurazione base delle app",
-            n4: "Il supporto post-lancio e la manutenzione continuativa non sono inclusi e prevedono costi aggiuntivi",
-            n5: "Eventuali richieste fuori dal perimetro del piano verranno valutate e preventivate separatamente",
-        },
+    whyTitle: "Perché scegliere questo piano?",
+    why: {
+        w1: "Soluzione ideale per iniziare a vendere online con Shopify",
+        w2: "Avvio rapido dello store con tutte le funzionalità essenziali",
+        w3: "Struttura chiara e scalabile per una crescita futura",
     },
+
+    notesTitle: "Note importanti:",
+    notes: {
+        n1: "Il piano è indicato per store con un massimo di 15 prodotti",
+        n2: "Funzionalità avanzate Shopify e personalizzazioni custom non sono incluse",
+        n3: "Il supporto post-lancio, la manutenzione del sito e i servizi SEO non sono inclusi e prevedono costi aggiuntivi",
+        n4: "Eventuali richieste fuori dal perimetro del piano verranno valutate e preventivate separatamente",
+    },
+},
+
+intermediatePlan: {
+    title: "Piano Intermediate per lo Sviluppo di Store Shopify",
+    subtitle:
+        "Pensato per business in crescita che necessitano di maggiore flessibilità, funzionalità avanzate e una presenza online più strutturata.",
+
+    price: "Prezzo:",
+    priceValue: "A partire da €899",
+
+    servicesTitle: "Servizi inclusi:",
+    services: {
+        s1: "Personalizzazione avanzata del tema Shopify oppure design semplice custom basato su struttura e componenti esistenti",
+        s2: "Inserimento prodotti iniziali per l’avvio dello store (fino a 50 prodotti – testi e immagini forniti dal cliente)",
+        s3: "Supporto multi-valuta in base al piano Shopify o alle app utilizzate",
+        s4: "Creazione di pagine personalizzate (About, Contact, Blog)",
+        s5: "Integrazione e configurazione di app essenziali Shopify (SEO base, email, recensioni)",
+        s6: "Fino a 5 revisioni incluse",
+    },
+
+    excludedCostsTitle: "Costi non inclusi:",
+    excludedCosts: {
+        e1: "Canone mensile Shopify",
+        e2: "Registrazione e rinnovo del dominio",
+        e3: "Acquisto di temi premium Shopify (se utilizzati)",
+        e4: "App a pagamento di terze parti",
+        e5: "Costi legati a funzionalità avanzate o app premium",
+    },
+
+    whyTitle: "Perché scegliere questo piano?",
+    why: {
+        w1: "Maggiore personalizzazione rispetto al Piano Base",
+        w2: "Supporto multi-valuta per raggiungere clienti internazionali",
+        w3: "Integrazione di strumenti essenziali per migliorare gestione e conversioni",
+    },
+
+    notesTitle: "Note importanti:",
+    notes: {
+        n1: "Il piano è indicato per store con un massimo di 50 prodotti iniziali",
+        n2: "Il design custom è limitato e non include sviluppo UI/UX completamente su misura",
+        n3: "I servizi SEO inclusi sono limitati all’installazione e configurazione base delle app",
+        n4: "Il supporto post-lancio e la manutenzione continuativa non sono inclusi e prevedono costi aggiuntivi",
+        n5: "Eventuali richieste fuori dal perimetro del piano verranno valutate e preventivate separatamente",
+    },
+},
+
+advancedPlan: {
+    title: "Piano Advanced per lo Sviluppo di Store Shopify",
+    subtitle:
+        "Soluzione completamente personalizzata e scalabile, pensata per brand strutturati che richiedono funzionalità avanzate, alte prestazioni e crescita a lungo termine.",
+
+    price: "Prezzo:",
+    priceValue: "Su accordo",
+
+    servicesTitle: "Servizi inclusi:",
+    services: {
+        s1: "Design Shopify completamente custom da zero, basato su un concept e un’identità di brand approvati",
+        s2: "Inserimento e configurazione prodotti fino a 200 articoli (inserimento manuale o import – contenuti forniti dal cliente)",
+        s3: "Personalizzazione completa delle pagine dello store e delle pagine prodotto secondo la struttura approvata",
+        s4: "Integrazione e configurazione di app e funzionalità Shopify avanzate, selezionate in base alle esigenze del business",
+        s5: "Ottimizzazione SEO avanzata focalizzata su setup tecnico e struttura on-page",
+        s6: "Supporto post-lancio esteso incluso (modalità e durata definite in fase di accordo)",
+        s7: "Revisioni illimitate limitate al perimetro e al concept approvato del progetto",
+    },
+
+    excludedCostsTitle: "Costi non inclusi:",
+    excludedCosts: {
+        e1: "Canone mensile Shopify",
+        e2: "Registrazione e rinnovo del dominio",
+        e3: "App Shopify a pagamento o soluzioni premium di terze parti",
+        e4: "Attività SEO continuative come creazione contenuti, link building o strategie off-site",
+        e5: "Sviluppo di app custom o integrazioni complesse non concordate inizialmente",
+    },
+
+    whyTitle: "Perché scegliere questo piano?",
+    why: {
+        w1: "Design completamente su misura e allineato all’identità del brand",
+        w2: "Funzionalità avanzate con standard elevati di performance",
+        w3: "Soluzione scalabile e flessibile per la crescita del business nel tempo",
+    },
+
+    notesTitle: "Note importanti:",
+    notes: {
+        n1: "Adatto a store con cataloghi di grandi dimensioni o logiche di vendita complesse",
+        n2: "Il design custom non include riprogettazioni complete una volta approvato il concept",
+        n3: "Le revisioni illimitate non includono modifiche fuori dallo scope concordato",
+        n4: "Il prezzo finale viene definito in base alla complessità del progetto e alle funzionalità richieste",
+    },
+},
+
+common: {
+    back: "Indietro",
+},
+
 
     orderPage: {
         title: "Condividi i dettagli del tuo progetto e ricevi una proposta su misura da Vetrinova.",
