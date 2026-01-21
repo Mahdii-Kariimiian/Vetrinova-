@@ -127,134 +127,152 @@ const en = {
         },
     },
     basicPlan: {
-    title: "Basic Shopify Store Development Plan",
-    subtitle:
-        "Designed for small businesses and new brands that want to launch a Shopify store quickly with essential e-commerce functionality.",
-    priceLabel: "Price",
-    price: "Starting from €499",
+        title: "Basic Shopify Store Development Plan",
+        subtitle:
+            "Designed for small businesses and new brands that want to launch a Shopify store quickly with essential e-commerce functionality.",
+        priceLabel: "Price",
+        price: "Starting from €499",
 
-    servicesTitle: "Services Included:",
-    services: {
-        s1: "Pre-made Shopify theme (free or client-owned) customized to match your brand (colors, fonts, basic layout, and content styling)",
-        s2: "Complete Shopify store setup and configuration",
-        s3: "Domain connection configuration (domain provided by the client)",
-        s4: "Adding up to 15 products using images and descriptions provided by the client",
-        s5: "Payment gateway configuration",
-        s6: "Shipping rates/methods configuration",
-        s7: "Basic training on using the Shopify admin panel (products, orders, basic store settings)",
-        s8: "Up to 2 revisions included",
-    },
+        servicesTitle: "Services Included:",
+        services: {
+            s1: "Pre-made Shopify theme (free or client-owned) customized to match your brand (colors, fonts, basic layout, and content styling)",
+            s2: "Complete Shopify store setup and configuration",
+            s3: "Domain connection configuration (domain provided by the client)",
+            s4: "Adding up to 15 products using images and descriptions provided by the client",
+            s5: "Payment gateway configuration",
+            s6: "Shipping rates/methods configuration",
+            s7: "Basic training on using the Shopify admin panel (products, orders, basic store settings)",
+            s8: "Up to 2 revisions included",
+        },
 
-    excludedCostsTitle: "Client Responsibilities / Costs Not Included:",
-    excludedCosts: {
-        e1: "Domain purchase and renewal costs are paid by the client",
-        e2: "Shopify monthly subscription cost is paid by the client",
-        e3: "Premium (paid) theme purchase cost is paid by the client if a paid theme is used",
-        e4: "Any paid third-party apps (if required) are paid by the client",
-    },
+        excludedCostsTitle: "Client Responsibilities / Costs Not Included:",
+        excludedCosts: {
+            e1: "Domain purchase and renewal costs are paid by the client",
+            e2: "Shopify monthly subscription cost is paid by the client",
+            e3: "Premium (paid) theme purchase cost is paid by the client if a paid theme is used",
+            e4: "Any paid third-party apps (if required) are paid by the client",
+        },
 
-    additionalServicesTitle: "Available as Add-ons (Extra Cost):",
-    additionalServices: {
-        a1: "Post-launch support and ongoing store maintenance",
-        a2: "SEO services (basic or advanced SEO work)",
-        a3: "Any extra customization or requests outside the plan scope",
-    },
+        additionalServicesTitle: "Available as Add-ons (Extra Cost):",
+        additionalServices: {
+            a1: "Post-launch support and ongoing store maintenance",
+            a2: "SEO services (basic or advanced SEO work)",
+            a3: "Any extra customization or requests outside the plan scope",
+        },
 
-    whyTitle: "Why Choose This Plan?",
-    why: {
-        w1: "Cost-effective solution to start selling online with Shopify",
-        w2: "Fast setup and quick launch with essential store features",
-        w3: "Clear scope with a solid foundation to upgrade later",
-    },
+        whyTitle: "Why Choose This Plan?",
+        why: {
+            w1: "Cost-effective solution to start selling online with Shopify",
+            w2: "Fast setup and quick launch with essential store features",
+            w3: "Clear scope with a solid foundation to upgrade later",
+        },
 
-    notesTitle: "Important Notes:",
-    notes: {
-        n1: "Suitable for stores with up to 15 products",
-        n2: "Advanced Shopify features and custom development are not included in this plan",
-        n3: "Support after launch and SEO are not included and require an additional budget",
-        n4: "Includes up to 2 revisions; additional revisions are quoted separately",
-        n5: "Any request outside the scope of this plan will be evaluated and quoted separately",
-        n6: "Product texts and images must be provided by the client",
+        notesTitle: "Important Notes:",
+        notes: {
+            n1: "Suitable for stores with up to 15 products",
+            n2: "Advanced Shopify features and custom development are not included in this plan",
+            n3: "Support after launch and SEO are not included and require an additional budget",
+            n4: "Includes up to 2 revisions; additional revisions are quoted separately",
+            n5: "Any request outside the scope of this plan will be evaluated and quoted separately",
+            n6: "Product texts and images must be provided by the client",
+        },
     },
-},
     common: {
         back: "Back",
     },
     advancedPlan: {
         title: "Advanced Shopify Store Development Plan",
         subtitle:
-            "Designed for businesses that require a fully customized Shopify store with advanced features and scalability.",
+            "A fully custom and scalable solution designed for structured brands that require advanced features, high performance, and long-term growth.",
         price: "Price:",
-        priceValue: "Upon Agreement",
+        priceValue: "Upon agreement",
+
         servicesTitle: "Services Included:",
         services: {
-            s1: "Fully custom Shopify design and branding from scratch",
-            s2: "Adding and structuring up to 200 products",
-            s3: "Full customization of store and product pages",
-            s4: "Installation of business-specific Shopify apps",
-            s5: "Advanced SEO implementation for organic growth",
+            s1: "Fully custom Shopify design from scratch based on an approved concept and brand identity",
+            s2: "Product setup and configuration for up to 200 products (manual entry or bulk import – content provided by the client)",
+            s3: "Full customization of store and product pages according to the approved design structure",
+            s4: "Integration and configuration of advanced Shopify apps and features selected based on business needs",
+            s5: "Advanced SEO optimization focused on technical setup and on-page structure",
+            s6: "Extended post-launch support included (scope and duration agreed in advance)",
+            s7: "Unlimited revisions within the approved project scope and design concept",
         },
+
+        excludedCostsTitle: "Costs Not Included:",
+        excludedCosts: {
+            e1: "Shopify monthly subscription fee",
+            e2: "Domain purchase and renewal",
+            e3: "Paid Shopify apps or premium third-party solutions",
+            e4: "Ongoing SEO activities such as content creation, link building, or off-page strategies",
+            e5: "Custom app development or complex integrations not agreed upon initially",
+        },
+
         samplesTitle: "Sample Projects:",
         samples: {
-            p1: "Luxury Watch Store with advanced filtering and reviews",
-            p2: "High-end Furniture Store with interactive galleries",
-            p3: "Fitness Equipment Store with custom apps and search",
+            p1: "Luxury watch store with advanced filtering and review systems",
+            p2: "High-end furniture store with interactive galleries and custom layouts",
+            p3: "Fitness equipment store with tailored app integrations and advanced search",
         },
-        more: "More projects will be added soon!",
+
+        more: "Additional projects will be added soon.",
+
         whyTitle: "Why Choose This Plan?",
         why: {
-            w1: "Completely tailored design for your brand",
-            w2: "Advanced functionality and performance optimization",
-            w3: "Scalable solution for long-term business growth",
+            w1: "Fully tailored design aligned with your brand identity",
+            w2: "Advanced functionality with high performance standards",
+            w3: "Scalable and flexible solution for long-term business growth",
         },
+
         notesTitle: "Important Notes:",
         notes: {
-            n1: "Suitable for stores with large product catalogs",
-            n2: "Includes custom features and advanced development",
-            n3: "Extended post-launch support included",
+            n1: "Suitable for stores with large product catalogs or complex sales logic",
+            n2: "Custom design does not include full redesigns once the concept is approved",
+            n3: "Unlimited revisions do not include changes outside the agreed project scope",
+            n4: "Final pricing is defined based on project complexity and required features",
         },
     },
+
     intermediatePlan: {
-    title: "Intermediate Shopify Store Development Plan",
-    subtitle:
-        "Designed for growing businesses that require greater flexibility, advanced features, and a more structured online presence.",
-    price: "Price: Starting from €899",
+        title: "Intermediate Shopify Store Development Plan",
+        subtitle:
+            "Designed for growing businesses that require greater flexibility, advanced features, and a more structured online presence.",
+        price: "Price: Starting from €899",
 
-    servicesTitle: "Services Included:",
-    services: {
-        s1: "Advanced Shopify theme customization or simple custom design based on existing Shopify structure and components",
-        s2: "Initial product setup for store launch (up to 50 products – content and images provided by the client)",
-        s3: "Multi-currency support based on the Shopify plan or apps used",
-        s4: "Creation of custom pages (About, Contact, Blog)",
-        s5: "Integration and basic configuration of essential Shopify apps (SEO, email, reviews)",
-        s6: "Up to 5 revisions included",
-    },
+        servicesTitle: "Services Included:",
+        services: {
+            s1: "Advanced Shopify theme customization or simple custom design based on existing Shopify structure and components",
+            s2: "Initial product setup for store launch (up to 50 products – content and images provided by the client)",
+            s3: "Multi-currency support based on the Shopify plan or apps used",
+            s4: "Creation of custom pages (About, Contact, Blog)",
+            s5: "Integration and basic configuration of essential Shopify apps (SEO, email, reviews)",
+            s6: "Up to 5 revisions included",
+        },
 
-    excludedCostsTitle: "Costs Not Included:",
-    excludedCosts: {
-        e1: "Shopify monthly subscription fee",
-        e2: "Domain purchase and renewal",
-        e3: "Purchase of premium Shopify themes (if used)",
-        e4: "Paid third-party apps",
-        e5: "Costs related to advanced features or premium apps",
-    },
+        excludedCostsTitle: "Costs Not Included:",
+        excludedCosts: {
+            e1: "Shopify monthly subscription fee",
+            e2: "Domain purchase and renewal",
+            e3: "Purchase of premium Shopify themes (if used)",
+            e4: "Paid third-party apps",
+            e5: "Costs related to advanced features or premium apps",
+        },
 
-    whyTitle: "Why Choose This Plan?",
-    why: {
-        w1: "More customization and flexibility compared to the Basic Plan",
-        w2: "Multi-currency support to reach international customers",
-        w3: "Integration of essential tools to improve store management and conversions",
-    },
+        whyTitle: "Why Choose This Plan?",
+        why: {
+            w1: "More customization and flexibility compared to the Basic Plan",
+            w2: "Multi-currency support to reach international customers",
+            w3: "Integration of essential tools to improve store management and conversions",
+        },
 
-    notesTitle: "Important Notes:",
-    notes: {
-        n1: "This plan is suitable for stores with up to 50 initial products",
-        n2: "Custom design is limited and does not include full custom UI/UX development",
-        n3: "Included SEO services are limited to app installation and basic configuration only",
-        n4: "Post-launch support and ongoing maintenance are not included and are available at an additional cost",
-        n5: "Any request outside the scope of this plan will be evaluated and quoted separately",
+        notesTitle: "Important Notes:",
+        notes: {
+            n1: "This plan is suitable for stores with up to 50 initial products",
+            n2: "Custom design is limited and does not include full custom UI/UX development",
+            n3: "Included SEO services are limited to app installation and basic configuration only",
+            n4: "Post-launch support and ongoing maintenance are not included and are available at an additional cost",
+            n5: "Any request outside the scope of this plan will be evaluated and quoted separately",
+        },
     },
-},
 
     orderPage: {
         title: "Share your project details and receive a tailored proposal from Vetrinova.",

@@ -173,39 +173,57 @@ const it = {
         back: "Indietro",
     },
     advancedPlan: {
-        title: "Piano Avanzato per lo Sviluppo di Store Shopify",
+        title: "Piano Advanced per lo Sviluppo di Store Shopify",
         subtitle:
-            "Pensato per aziende che necessitano di uno store Shopify completamente personalizzato e scalabile.",
+            "Soluzione completamente personalizzata e scalabile, pensata per brand strutturati che richiedono funzionalità avanzate, alte prestazioni e crescita a lungo termine.",
         price: "Prezzo:",
         priceValue: "Su accordo",
-        servicesTitle: "Servizi Inclusi:",
+
+        servicesTitle: "Servizi inclusi:",
         services: {
-            s1: "Design Shopify completamente personalizzato da zero",
-            s2: "Inserimento e gestione fino a 200 prodotti",
-            s3: "Personalizzazione completa delle pagine dello store",
-            s4: "Installazione di app Shopify specifiche per il business",
-            s5: "Implementazione SEO avanzata",
+            s1: "Design Shopify completamente custom da zero, basato su un concept e un’identità di brand approvati",
+            s2: "Inserimento e configurazione prodotti fino a 200 articoli (inserimento manuale o import – contenuti forniti dal cliente)",
+            s3: "Personalizzazione completa delle pagine dello store e delle pagine prodotto secondo la struttura approvata",
+            s4: "Integrazione e configurazione di app e funzionalità Shopify avanzate, selezionate in base alle esigenze del business",
+            s5: "Ottimizzazione SEO avanzata focalizzata su setup tecnico e struttura on-page",
+            s6: "Supporto post-lancio esteso incluso (modalità e durata definite in fase di accordo)",
+            s7: "Revisioni illimitate limitate al perimetro e al concept approvato del progetto",
         },
-        samplesTitle: "Progetti di Esempio:",
+
+        excludedCostsTitle: "Costi non inclusi:",
+        excludedCosts: {
+            e1: "Canone mensile Shopify",
+            e2: "Registrazione e rinnovo del dominio",
+            e3: "App Shopify a pagamento o soluzioni premium di terze parti",
+            e4: "Attività SEO continuative come creazione contenuti, link building o strategie off-site",
+            e5: "Sviluppo di app custom o integrazioni complesse non concordate inizialmente",
+        },
+
+        samplesTitle: "Progetti di esempio:",
         samples: {
-            p1: "Store di orologi di lusso con filtri avanzati",
-            p2: "Negozio di arredamento con gallerie interattive",
-            p3: "Store di attrezzature fitness con app personalizzate",
+            p1: "Store di orologi di lusso con filtri avanzati e sistemi di recensioni",
+            p2: "Negozio di arredamento di fascia alta con gallerie interattive e layout personalizzati",
+            p3: "Store di attrezzature fitness con integrazioni su misura e ricerca avanzata",
         },
-        more: "Altri progetti saranno aggiunti presto!",
+
+        more: "Altri progetti saranno aggiunti presto.",
+
         whyTitle: "Perché scegliere questo piano?",
         why: {
-            w1: "Design completamente su misura",
-            w2: "Funzionalità avanzate e alte prestazioni",
-            w3: "Soluzione scalabile per la crescita del business",
+            w1: "Design completamente su misura e allineato all’identità del brand",
+            w2: "Funzionalità avanzate con standard elevati di performance",
+            w3: "Soluzione scalabile e flessibile per la crescita del business nel tempo",
         },
-        notesTitle: "Note Importanti:",
+
+        notesTitle: "Note importanti:",
         notes: {
-            n1: "Adatto a store con grandi cataloghi prodotti",
-            n2: "Include sviluppo avanzato e funzionalità personalizzate",
-            n3: "Supporto post-lancio esteso incluso",
+            n1: "Adatto a store con cataloghi di grandi dimensioni o logiche di vendita complesse",
+            n2: "Il design custom non include riprogettazioni complete una volta approvato il concept",
+            n3: "Le revisioni illimitate non includono modifiche fuori dallo scope concordato",
+            n4: "Il prezzo finale viene definito in base alla complessità del progetto e alle funzionalità richieste",
         },
     },
+
     intermediatePlan: {
         title: "Piano Intermediate per lo Sviluppo di Store Shopify",
         subtitle:
