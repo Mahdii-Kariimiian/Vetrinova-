@@ -35,23 +35,42 @@ const IntermediatePlan = ({ isDarkMode }) => {
 
             <div className="flex flex-col-reverse md:flex-row gap-10 items-start">
                 <div>
+                    {/* Price */}
+                    <p className="mb-6 text-3xl font-semibold">
+                        {t("intermediatePlan.price")}
+                    </p>
+
                     {/* Services */}
                     <section className="mb-12">
-                        <p className="mb-6 text-3xl">
-                            {t("intermediatePlan.price")}{" "}
-                            <strong>€899</strong>
-                        </p>
-
                         <h2 className="text-2xl font-semibold">
                             {t("intermediatePlan.servicesTitle")}
                         </h2>
 
                         <ul className="list-disc pl-6 mt-4 space-y-3">
-                            <li>{t("intermediatePlan.services.s1")}</li>
-                            <li>{t("intermediatePlan.services.s2")}</li>
-                            <li>{t("intermediatePlan.services.s3")}</li>
-                            <li>{t("intermediatePlan.services.s4")}</li>
-                            <li>{t("intermediatePlan.services.s5")}</li>
+                            {Object.values(
+                                t("intermediatePlan.services", {
+                                    returnObjects: true,
+                                })
+                            ).map((service, index) => (
+                                <li key={index}>{service}</li>
+                            ))}
+                        </ul>
+                    </section>
+
+                    {/* Excluded Costs */}
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-semibold">
+                            {t("intermediatePlan.excludedCostsTitle")}
+                        </h2>
+
+                        <ul className="list-disc pl-6 mt-4 space-y-3">
+                            {Object.values(
+                                t("intermediatePlan.excludedCosts", {
+                                    returnObjects: true,
+                                })
+                            ).map((cost, index) => (
+                                <li key={index}>{cost}</li>
+                            ))}
                         </ul>
                     </section>
 
@@ -62,9 +81,13 @@ const IntermediatePlan = ({ isDarkMode }) => {
                         </h2>
 
                         <ul className="list-disc pl-6 mt-4 space-y-3">
-                            <li>{t("intermediatePlan.why.w1")}</li>
-                            <li>{t("intermediatePlan.why.w2")}</li>
-                            <li>{t("intermediatePlan.why.w3")}</li>
+                            {Object.values(
+                                t("intermediatePlan.why", {
+                                    returnObjects: true,
+                                })
+                            ).map((reason, index) => (
+                                <li key={index}>{reason}</li>
+                            ))}
                         </ul>
                     </section>
 
@@ -75,9 +98,13 @@ const IntermediatePlan = ({ isDarkMode }) => {
                         </h2>
 
                         <ul className="list-disc pl-6 mt-4 space-y-3">
-                            <li>{t("intermediatePlan.notes.n1")}</li>
-                            <li>{t("intermediatePlan.notes.n2")}</li>
-                            <li>{t("intermediatePlan.notes.n3")}</li>
+                            {Object.values(
+                                t("intermediatePlan.notes", {
+                                    returnObjects: true,
+                                })
+                            ).map((note, index) => (
+                                <li key={index}>{note}</li>
+                            ))}
                         </ul>
                     </section>
                 </div>
@@ -89,7 +116,12 @@ const IntermediatePlan = ({ isDarkMode }) => {
                 />
             </div>
 
-            <Link to="/order" className="flex items-center text-darkGreen">
+            <Link
+                to="/order"
+                className={`flex items-center mt-8 ${
+                    isDarkMode ? "text-lightGreen" : "text-darkGreen"
+                }`}
+            >
                 <FaArrowLeft className="mr-2" />
                 {t("common.back")}
             </Link>
