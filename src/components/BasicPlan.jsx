@@ -21,7 +21,9 @@ const BasicPlan = ({ isDarkMode }) => {
         >
             {/* Header */}
             <header className="text-center my-12">
-                <h1 className="text-4xl font-bold">{t("basicPlan.title")}</h1>
+                <h1 className="text-4xl font-bold">
+                    {t("basicPlan.title")}
+                </h1>
                 <p
                     className={`text-lg mt-2 ${
                         isDarkMode ? "text-gray-300" : "text-gray-600"
@@ -33,10 +35,10 @@ const BasicPlan = ({ isDarkMode }) => {
 
             <div className="flex flex-col-reverse md:flex-row gap-10 items-start">
                 <div>
-                    {/* Services */}
+                    {/* Price + Services */}
                     <section className="mb-12">
-                        <p className="mb-6 text-3xl">
-                            {t("basicPlan.price")} <strong>€499</strong>
+                        <p className="mb-6 text-3xl font-semibold">
+                            {t("basicPlan.price")}
                         </p>
 
                         <h2 className="text-2xl font-semibold">
@@ -44,11 +46,30 @@ const BasicPlan = ({ isDarkMode }) => {
                         </h2>
 
                         <ul className="list-disc pl-6 mt-4 space-y-3">
-                            <li>{t("basicPlan.services.s1")}</li>
-                            <li>{t("basicPlan.services.s2")}</li>
-                            <li>{t("basicPlan.services.s3")}</li>
-                            <li>{t("basicPlan.services.s4")}</li>
-                            <li>{t("basicPlan.services.s5")}</li>
+                            {Object.values(
+                                t("basicPlan.services", {
+                                    returnObjects: true,
+                                })
+                            ).map((service, index) => (
+                                <li key={index}>{service}</li>
+                            ))}
+                        </ul>
+                    </section>
+
+                    {/* Excluded Costs */}
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-semibold">
+                            {t("basicPlan.excludedCostsTitle")}
+                        </h2>
+
+                        <ul className="list-disc pl-6 mt-4 space-y-3">
+                            {Object.values(
+                                t("basicPlan.excludedCosts", {
+                                    returnObjects: true,
+                                })
+                            ).map((cost, index) => (
+                                <li key={index}>{cost}</li>
+                            ))}
                         </ul>
                     </section>
 
@@ -59,9 +80,13 @@ const BasicPlan = ({ isDarkMode }) => {
                         </h2>
 
                         <ul className="list-disc pl-6 mt-4 space-y-3">
-                            <li>{t("basicPlan.why.w1")}</li>
-                            <li>{t("basicPlan.why.w2")}</li>
-                            <li>{t("basicPlan.why.w3")}</li>
+                            {Object.values(
+                                t("basicPlan.why", {
+                                    returnObjects: true,
+                                })
+                            ).map((reason, index) => (
+                                <li key={index}>{reason}</li>
+                            ))}
                         </ul>
                     </section>
 
@@ -72,10 +97,13 @@ const BasicPlan = ({ isDarkMode }) => {
                         </h2>
 
                         <ul className="list-disc pl-6 mt-4 space-y-3">
-                            <li>{t("basicPlan.notes.n1")}</li>
-                            <li>{t("basicPlan.notes.n2")}</li>
-                            <li>{t("basicPlan.notes.n3")}</li>
-                            <li>{t("basicPlan.notes.n4")}</li>
+                            {Object.values(
+                                t("basicPlan.notes", {
+                                    returnObjects: true,
+                                })
+                            ).map((note, index) => (
+                                <li key={index}>{note}</li>
+                            ))}
                         </ul>
                     </section>
                 </div>
@@ -87,7 +115,12 @@ const BasicPlan = ({ isDarkMode }) => {
                 />
             </div>
 
-            <Link to="/order" className="flex items-center text-darkGreen">
+            <Link
+                to="/order"
+                className={`flex items-center mt-8 ${
+                    isDarkMode ? "text-lightGreen" : "text-darkGreen"
+                }`}
+            >
                 <FaArrowLeft className="mr-2" />
                 {t("common.back")}
             </Link>

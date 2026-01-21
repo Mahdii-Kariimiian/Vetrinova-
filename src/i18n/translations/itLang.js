@@ -131,30 +131,44 @@ const it = {
     basicPlan: {
         title: "Piano Base per lo Sviluppo di Store Shopify",
         subtitle:
-            "Questo piano è pensato per le aziende che vogliono avviare uno store online in modo rapido ed economico.",
-        price: "Prezzo: fino a",
-        servicesTitle: "Servizi Inclusi:",
+            "Questo piano è pensato per aziende, piccoli business e nuovi brand che desiderano avviare uno store Shopify in modo rapido ed economico.",
+        price: "Prezzo: a partire da €499",
+
+        servicesTitle: "Servizi inclusi:",
         services: {
-            s1: "Template predefinito personalizzato per il tuo brand",
-            s2: "Configurazione completa dello store Shopify e dominio",
-            s3: "Inserimento di fino a 15 prodotti con immagini e descrizioni",
-            s4: "Configurazione dei metodi di pagamento e spedizione",
-            s5: "Formazione base per la gestione dello store",
+            s1: "Tema Shopify predefinito (gratuito o già acquistato dal cliente), personalizzato nei colori, font e contenuti del brand",
+            s2: "Configurazione completa dello store Shopify",
+            s3: "Collegamento del dominio (dominio fornito dal cliente)",
+            s4: "Inserimento fino a 15 prodotti con testi e immagini forniti dal cliente",
+            s5: "Configurazione dei metodi di pagamento e spedizione",
+            s6: "Formazione base sull’utilizzo del pannello di amministrazione Shopify",
+            s7: "Fino a 2 revisioni incluse",
         },
+
+        excludedCostsTitle: "Costi non inclusi:",
+        excludedCosts: {
+            e1: "Canone mensile Shopify",
+            e2: "Registrazione e rinnovo del dominio",
+            e3: "Acquisto di temi premium Shopify (se utilizzati)",
+            e4: "App a pagamento di terze parti",
+        },
+
         whyTitle: "Perché scegliere questo piano?",
         why: {
-            w1: "Soluzione economica per iniziare a vendere online",
-            w2: "Avvio rapido dello store",
-            w3: "Include tutte le funzionalità essenziali",
+            w1: "Soluzione ideale per iniziare a vendere online con Shopify",
+            w2: "Avvio rapido dello store con tutte le funzionalità essenziali",
+            w3: "Struttura chiara e scalabile per una crescita futura",
         },
-        notesTitle: "Note Importanti:",
+
+        notesTitle: "Note importanti:",
         notes: {
-            n1: "Ideale per store con massimo 15 prodotti",
-            n2: "Funzionalità avanzate non incluse",
-            n3: "Supporto post-lancio limitato",
-            n4: "Include fino a 2 revisioni",
+            n1: "Il piano è indicato per store con un massimo di 15 prodotti",
+            n2: "Funzionalità avanzate Shopify e personalizzazioni custom non sono incluse",
+            n3: "Il supporto post-lancio, la manutenzione del sito e i servizi SEO non sono inclusi e prevedono costi aggiuntivi",
+            n4: "Eventuali richieste fuori dal perimetro del piano verranno valutate e preventivate separatamente",
         },
     },
+
     common: {
         back: "Indietro",
     },

@@ -127,32 +127,56 @@ const en = {
         },
     },
     basicPlan: {
-        title: "Basic Shopify Store Development Plan",
-        subtitle:
-            "This plan is designed for businesses aiming to establish an online store efficiently and cost-effectively.",
-        price: "Price: Up to",
-        servicesTitle: "Services Included:",
-        services: {
-            s1: "Pre-made template design customized to your brand",
-            s2: "Shopify store setup, configuration, and domain connection",
-            s3: "Adding up to 15 products with images and descriptions",
-            s4: "Payment and shipping configuration",
-            s5: "Basic training for managing products and orders",
-        },
-        whyTitle: "Why Choose This Plan?",
-        why: {
-            w1: "Cost-effective solution for launching your store",
-            w2: "Fast setup and quick launch",
-            w3: "Includes all essential e-commerce features",
-        },
-        notesTitle: "Important Notes:",
-        notes: {
-            n1: "Suitable for stores with up to 15 products",
-            n2: "Advanced Shopify features are not included",
-            n3: "Limited post-launch support",
-            n4: "Includes up to 2 revisions",
-        },
+    title: "Basic Shopify Store Development Plan",
+    subtitle:
+        "Designed for small businesses and new brands that want to launch a Shopify store quickly with essential e-commerce functionality.",
+    priceLabel: "Price",
+    price: "Starting from €499",
+
+    servicesTitle: "Services Included:",
+    services: {
+        s1: "Pre-made Shopify theme (free or client-owned) customized to match your brand (colors, fonts, basic layout, and content styling)",
+        s2: "Complete Shopify store setup and configuration",
+        s3: "Domain connection configuration (domain provided by the client)",
+        s4: "Adding up to 15 products using images and descriptions provided by the client",
+        s5: "Payment gateway configuration",
+        s6: "Shipping rates/methods configuration",
+        s7: "Basic training on using the Shopify admin panel (products, orders, basic store settings)",
+        s8: "Up to 2 revisions included",
     },
+
+    excludedCostsTitle: "Client Responsibilities / Costs Not Included:",
+    excludedCosts: {
+        e1: "Domain purchase and renewal costs are paid by the client",
+        e2: "Shopify monthly subscription cost is paid by the client",
+        e3: "Premium (paid) theme purchase cost is paid by the client if a paid theme is used",
+        e4: "Any paid third-party apps (if required) are paid by the client",
+    },
+
+    additionalServicesTitle: "Available as Add-ons (Extra Cost):",
+    additionalServices: {
+        a1: "Post-launch support and ongoing store maintenance",
+        a2: "SEO services (basic or advanced SEO work)",
+        a3: "Any extra customization or requests outside the plan scope",
+    },
+
+    whyTitle: "Why Choose This Plan?",
+    why: {
+        w1: "Cost-effective solution to start selling online with Shopify",
+        w2: "Fast setup and quick launch with essential store features",
+        w3: "Clear scope with a solid foundation to upgrade later",
+    },
+
+    notesTitle: "Important Notes:",
+    notes: {
+        n1: "Suitable for stores with up to 15 products",
+        n2: "Advanced Shopify features and custom development are not included in this plan",
+        n3: "Support after launch and SEO are not included and require an additional budget",
+        n4: "Includes up to 2 revisions; additional revisions are quoted separately",
+        n5: "Any request outside the scope of this plan will be evaluated and quoted separately",
+        n6: "Product texts and images must be provided by the client",
+    },
+},
     common: {
         back: "Back",
     },
