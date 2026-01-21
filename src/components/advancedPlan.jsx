@@ -74,31 +74,6 @@ const AdvancedPlan = ({ isDarkMode }) => {
                         </ul>
                     </section>
 
-                    {/* Sample Projects */}
-                    <section className="mb-12">
-                        <h2 className="text-2xl font-semibold">
-                            {t("advancedPlan.samplesTitle")}
-                        </h2>
-
-                        <ul className="list-disc pl-6 mt-4 space-y-3">
-                            {Object.values(
-                                t("advancedPlan.samples", {
-                                    returnObjects: true,
-                                }),
-                            ).map((sample, index) => (
-                                <li key={index}>{sample}</li>
-                            ))}
-                        </ul>
-
-                        <p
-                            className={`mt-4 italic ${
-                                isDarkMode ? "text-gray-300" : "text-gray-500"
-                            }`}
-                        >
-                            {t("advancedPlan.more")}
-                        </p>
-                    </section>
-
                     {/* Why */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-semibold">

@@ -207,15 +207,6 @@ const en = {
             e5: "Custom app development or complex integrations not agreed upon initially",
         },
 
-        samplesTitle: "Sample Projects:",
-        samples: {
-            p1: "Luxury watch store with advanced filtering and review systems",
-            p2: "High-end furniture store with interactive galleries and custom layouts",
-            p3: "Fitness equipment store with tailored app integrations and advanced search",
-        },
-
-        more: "Additional projects will be added soon.",
-
         whyTitle: "Why Choose This Plan?",
         why: {
             w1: "Fully tailored design aligned with your brand identity",

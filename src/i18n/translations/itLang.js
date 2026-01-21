@@ -199,14 +199,6 @@ const it = {
             e5: "Sviluppo di app custom o integrazioni complesse non concordate inizialmente",
         },
 
-        samplesTitle: "Progetti di esempio:",
-        samples: {
-            p1: "Store di orologi di lusso con filtri avanzati e sistemi di recensioni",
-            p2: "Negozio di arredamento di fascia alta con gallerie interattive e layout personalizzati",
-            p3: "Store di attrezzature fitness con integrazioni su misura e ricerca avanzata",
-        },
-
-        more: "Altri progetti saranno aggiunti presto.",
 
         whyTitle: "Perché scegliere questo piano?",
         why: {
