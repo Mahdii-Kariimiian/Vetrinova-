@@ -35,11 +35,6 @@ const IntermediatePlan = ({ isDarkMode }) => {
 
             <div className="flex flex-col-reverse md:flex-row gap-10 items-start">
                 <div>
-                    {/* Price */}
-                    <p className="mb-6 text-3xl font-semibold">
-                        {t("intermediatePlan.price")}
-                    </p>
-
                     {/* Services */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-semibold">
@@ -50,7 +45,7 @@ const IntermediatePlan = ({ isDarkMode }) => {
                             {Object.values(
                                 t("intermediatePlan.services", {
                                     returnObjects: true,
-                                })
+                                }),
                             ).map((service, index) => (
                                 <li key={index}>{service}</li>
                             ))}
@@ -67,7 +62,7 @@ const IntermediatePlan = ({ isDarkMode }) => {
                             {Object.values(
                                 t("intermediatePlan.excludedCosts", {
                                     returnObjects: true,
-                                })
+                                }),
                             ).map((cost, index) => (
                                 <li key={index}>{cost}</li>
                             ))}
@@ -84,7 +79,7 @@ const IntermediatePlan = ({ isDarkMode }) => {
                             {Object.values(
                                 t("intermediatePlan.why", {
                                     returnObjects: true,
-                                })
+                                }),
                             ).map((reason, index) => (
                                 <li key={index}>{reason}</li>
                             ))}
@@ -101,12 +96,16 @@ const IntermediatePlan = ({ isDarkMode }) => {
                             {Object.values(
                                 t("intermediatePlan.notes", {
                                     returnObjects: true,
-                                })
+                                }),
                             ).map((note, index) => (
                                 <li key={index}>{note}</li>
                             ))}
                         </ul>
                     </section>
+                    {/* Price */}
+                    <p className="mb-6 text-3xl font-semibold">
+                        {t("intermediatePlan.price")}
+                    </p>
                 </div>
 
                 <img

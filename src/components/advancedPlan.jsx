@@ -35,10 +35,7 @@ const AdvancedPlan = ({ isDarkMode }) => {
 
             <div className="flex flex-col-reverse md:flex-row gap-10 items-start">
                 <div>
-                    {/* Price */}
-                    <p className="mb-6 text-3xl font-semibold">
-                        {t("advancedPlan.price")} {t("advancedPlan.priceValue")}
-                    </p>
+                  
 
                     {/* Services */}
                     <section className="mb-12">
@@ -107,6 +104,10 @@ const AdvancedPlan = ({ isDarkMode }) => {
                             ))}
                         </ul>
                     </section>
+                      {/* Price */}
+                    <p className="mb-6 text-3xl font-semibold">
+                        {t("advancedPlan.price")} {t("advancedPlan.priceValue")}
+                    </p>
                 </div>
 
                 <img
